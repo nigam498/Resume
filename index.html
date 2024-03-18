@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nigam Patel - Resume</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    header {
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 0 20px;
+    }
+    h1, h2, h3 {
+      color: #007bff;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    strong {
+      font-weight: bold;
+    }
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .linkedin {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #fff;
+      background-color: #007bff;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .linkedin:hover {
+      background-color: #0056b3;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 20px 0;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 5px;
+    }
+    .profile-img {
+      float: left;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nigam Patel Resume</h1>
+  </header>
+
+  <div class="container">
+
+    <img src="https://scontent.fstv3-1.fna.fbcdn.net/v/t39.30808-6/421919981_6835375886571169_8417759672949495590_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=3uMxsEbkeK0AX-rnyG3&_nc_ht=scontent.fstv3-1.fna&oh=00_AfDOWpr0Z_0xQnnB1iw0kRxix_5n02RBDpU65km9gfCZlQ&oe=65FDF00B" alt="Nigam Patel" class="profile-img" width="150" height="150">
+
+    <section id="intro">
+      <h2>INTRODUCTION</h2>
+      <p>Hi, my name is Nigam Patel.</p>
+      <p>Contact: <strong>+919662188485</strong></p>
+      <p>Email: <strong>nigampatel498@gmail.com</strong></p>
+      <p>I am <span id="age"></span> years old.</p>
+      <p>Gender: <strong>Male</strong></p>
+      <p>I have been qualified with following <strong>B.COM (<a href="https://www.vnsgu.ac.in/">VNSGU</a>), PGDBF (<a href="https://www.siu.edu.in/">SYMBIOSIS(PUNE)</a>)</strong> with no backlogs.</p>
+      <p>I live in Surat, Gujarat - 395017.</p>
+      <p>Status: Married</p>
+      <a href="https://www.linkedin.com/in/nigam-patel-1226b8b5/" class="linkedin" target="_blank">LinkedIn Profile</a>
+    </section>
+
+    <hr>
+
+    <section id="about">
+      <h2>ABOUT ME</h2>
+      <ul>
+        <li>1)Be able to Finalise the books of Accounts</li>
+        <li>2)Reports Preparing/Filing of GSTR-1, 3B</li>
+        <li>3)Bank Reconciliation</li>
+        <li>4)E-Way bill Generation</li>
+        <li>5)Stock/Mutual fund transaction Entries (capital gain preparation of any kind)</li>
+        <li>6)Experience since 2016 using different accounting software</li>
+        <li>7)Microsoft Office chart preparation</li>
+        <li>8)Corporate level email/application writing</li>
+        <li>9)Can Obtain good manpower for organization through own research</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id="work-experience">
+      <h2>WORK EXPERIENCE</h2>
+      <h3>1) KAMEET TAX AND INVESTMENT CONSULTANCY (<a href="https://kameet.com/">KAMEET</a>)</h3>
+      <ul>
+        <li>Software used here: Genius, MCS, BUSY & TALLY</li>
+        <li>Initially given lighter responsibility here then worked with higher one</li>
+        <li><strong>Joined in 2017 - left in 2018</strong></li>
+        <li>Reason to leave: Relocated in New area of Residence & in final year of PGDBF</li>
+      </ul>
+     <hr>
+     
+     
+      <h3>1) Dawer Expo Fabs(Textile organisation)</h3>
+        <li>Software used here: MCS</li>
+        <li>Senior Accountant</li>
+        <li><strong>Joined in 2018 - Presnt</strong></li>
+        <li>Managing alone more than accounts of 4 sub firm account including Dawer Expo Fabs</li>
+      </ul>
+    </section>
+     <hr>
+      <h3>Other Certifications</h3>
+        <li>Software used here: MCS</li>
+        <li>Senior Accountant</li>
+        <li><strong>Joined in 2018 - Presnt</strong></li>
+        <li>Managing alone more than accounts of 4 sub firm account including Dawer Expo Fabs</li>
+      </ul>
+    </section>
+     <hr>
+    <script>
+      // Calculate age
+      var dob = new Date('1994-10-10');
+      var today = new Date();
+      var age = Math.floor((today - dob) / (365.25 * 24 * 60 * 60 * 1000)); // Considering leap years
+      document.getElementById('age').innerText = age;
+    </script>
+
+  </div>
+</body>
+</html>
