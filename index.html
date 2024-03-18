@@ -27,7 +27,7 @@
       color: #007bff;
     }
     p {
-      margin-bottom: 10px;
+      margin-bottom: 15px; /* Increased paragraph spacing */
     }
     strong {
       font-weight: bold;
@@ -35,9 +35,11 @@
     a {
       color: #007bff;
       text-decoration: none;
+      border-bottom: 1px solid #007bff; /* Underline effect */
+      transition: border-bottom 0.3s ease; /* Smooth transition for underline */
     }
     a:hover {
-      text-decoration: underline;
+      border-bottom: 1px solid transparent; /* Hide underline on hover */
     }
     .linkedin {
       display: block;
@@ -61,7 +63,7 @@
       padding: 0;
     }
     ul li {
-      margin-bottom: 5px;
+      margin-bottom: 8px; /* Increased spacing between list items */
     }
     .profile-img {
       float: left;
@@ -89,7 +91,7 @@
       <p>Gender: <strong>Male</strong></p>
       <p>I have been qualified with following <strong>B.COM (<a href="https://www.vnsgu.ac.in/">VNSGU</a>), PGDBF (<a href="https://www.siu.edu.in/">SYMBIOSIS(PUNE)</a>)</strong> with no backlogs.</p>
       <p>I live in Surat, Gujarat - 395017.</p>
-      <p>Languages known hindi,English,Gujarati</p>
+      <p>Languages known: Hindi, English, Gujarati</p>
       <p>Status: Married</p>
       <a href="https://www.linkedin.com/in/nigam-patel-1226b8b5/" class="linkedin" target="_blank">LinkedIn Profile</a>
     </section>
@@ -99,15 +101,15 @@
     <section id="about">
       <h2>ABOUT ME</h2>
       <ul>
-        <li>1)Be able to Finalise the books of Accounts</li>
-        <li>2)Reports Preparing/Filing of GSTR-1, 3B</li>
-        <li>3)Bank Reconciliation</li>
-        <li>4)E-Way bill Generation</li>
-        <li>5)Stock/Mutual fund transaction Entries (capital gain preparation of any kind)</li>
-        <li>6)Experience since 2016 using different accounting software</li>
-        <li>7)Microsoft Office chart preparation</li>
-        <li>8)Corporate level email/application writing</li>
-        <li>9)Can Obtain good manpower for organization through own research</li>
+        <li>Be able to Finalise the books of Accounts</li>
+        <li>Reports Preparing/Filing of GSTR-1, 3B</li>
+        <li>Bank Reconciliation</li>
+        <li>E-Way bill Generation</li>
+        <li>Stock/Mutual fund transaction Entries (capital gain preparation of any kind)</li>
+        <li>Experience since 2016 using different accounting software</li>
+        <li>Microsoft Office chart preparation</li>
+        <li>Corporate level email/application writing</li>
+        <li>Can Obtain good manpower for organization through own research</li>
       </ul>
     </section>
 
@@ -126,26 +128,27 @@
      
      
       <h3>1) Dawer Expo Fabs(Textile organisation)</h3>
-        <li>Software used here: MCS</li>
-        <li>Senior Accountant</li>
-        <li><strong>Joined in 2018 - Presnt</strong></li>
-        <li>Managing alone more than accounts of 4 sub firm account including Dawer Expo Fabs</li>
-      </ul>
-    </section>
-     <hr>
-      <h2>Other Certifications</h2>
-        <li>Certified Technical Analyst NSE (National stock exchange) Certificated by Kredent Acedemy</li>
-        <li>
-        <li>C++ Programming Certification Udemy Tutor Abdul Bari</li>
-        
-      </ul>
-      <h2>To Reader</h2>
-      <p>I have been known for my perfection and cool relationships with fellow colleagues
-        I have worked with i have been worked with all age group people and have friendly relationship till today i have forgiven mind if i fight with somebody may be eating chips in parking at evening with same guy hota he yaar.... reason to have resume like this html form i know programing little bit so this is i find better way to write and yea i am a MINI HR my self i can help you to find guy cause i know the guy who knows the guy who knows an another guy so dont worry admi ho jayga.
-        I learn fast anything if you train me i would give you much better result. 
-       </p>
-    </section>
-     <hr>
+        <ul> <!-- Fixed missing opening ul tag -->
+          <li>Software used here: MCS</li>
+          <li>Senior Accountant</li>
+          <li><strong>Joined in 2018 - Present</strong></li>
+          <li>Managing alone more than accounts of 4 sub firm account including Dawer Expo Fabs</li>
+        </ul>
+      </section>
+    <hr>
+      <section id="other-certifications"> <!-- Changed from h2 to section -->
+        <h2>Other Certifications</h2>
+          <ul>
+            <li>Certified Technical Analyst NSE (National stock exchange) Certificated by Kredent Acedemy</li> <!-- Removed extra li tag -->
+            <li>C++ Programming Certification Udemy Tutor Abdul Bari</li>
+          </ul>
+      </section>
+      <section id="to-reader"> <!-- Changed from h2 to section -->
+        <h2>To Reader</h2>
+        <p>I have been known for my perfection and cool relationships with fellow colleagues.
+          I have worked with people of all age groups and have maintained friendly relationships till today. I have a forgiving nature, and if I have a disagreement with somebody, we can always resolve it over a chat. I am a bit of a "Mini HR" myself and can help you find the right person because I know the guy who knows the guy who knows another guy, so don't worry, we'll get things sorted. I learn fast; if you train me, I can deliver even better results.</p>
+      </section>
+    </div>
     <script>
       // Calculate age
       var dob = new Date('1994-10-10');
@@ -153,7 +156,5 @@
       var age = Math.floor((today - dob) / (365.25 * 24 * 60 * 60 * 1000)); // Considering leap years
       document.getElementById('age').innerText = age;
     </script>
-
-  </div>
 </body>
 </html>
